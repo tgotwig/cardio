@@ -28,4 +28,28 @@ defmodule ElixirCardio do
     text
     |> String.reverse()
   end
+
+  @doc """
+  Checks for palindrome.
+
+  ## Examples
+
+      iex> ElixirCardio.is_palindrome("disney")
+      false
+
+      iex> ElixirCardio.is_palindrome("did")
+      true
+
+  """
+  def is_palindrome(word) do
+    word
+    |> String.to_charlist()
+    |> Enum.with_index()
+    |> Enum.map(fn {_e, idx} ->
+      binary_part(word, idx, 1) ==
+        binary_part(word, String.length(word) - 1 - idx, 1)
+    end)
+    |> Enum.member?(false)
+    |> Kernel.not()
+  end
 end
