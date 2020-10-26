@@ -18,4 +18,12 @@ public class AppTest
     {
       assertEquals("yensid", App.revStr("disney"));
     }
+
+    @Test
+    public void shouldValidatePalindrome()
+    {
+      assertEquals(true, App.isPalindrome("abcba"));
+      assertEquals(true, App.isPalindrome("ab cba"));
+      assertEquals(false, App.isPalindrome("abc"));
+    }
 }
