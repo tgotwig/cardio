@@ -12,7 +12,7 @@ public class AppTest
     @Test
     public void shouldReverseString()
     {
-      assertEquals("yensid", revStr("disney"));
+      assertEquals(revStr("disney"), "yensid");
     }
 
     // ----
@@ -25,8 +25,8 @@ public class AppTest
     @Test
     public void shouldValidatePalindrome()
     {
-      assertEquals(true, isPalindrome("abcba"));
-      assertEquals(true, isPalindrome("ab cba"));
-      assertEquals(false, isPalindrome("abc"));
+      assertEquals(isPalindrome("abcba"), true);
+      assertEquals(isPalindrome("ab cba"), true);
+      assertEquals(isPalindrome("abc"), false);
     }
 }
