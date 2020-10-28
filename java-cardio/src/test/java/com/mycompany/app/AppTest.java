@@ -10,8 +10,7 @@ public class AppTest
       return new StringBuilder(string).reverse().toString();
     }
     @Test
-    public void shouldReverseString()
-    {
+    public void shouldReverseString() {
       assertEquals(revStr("disney"), "yensid");
     }
 
@@ -23,10 +22,21 @@ public class AppTest
         .allMatch(i -> temp.charAt(i) == temp.charAt(temp.length() - i - 1));
     }
     @Test
-    public void shouldValidatePalindrome()
-    {
+    public void shouldValidatePalindrome() {
       assertEquals(isPalindrome("abcba"), true);
       assertEquals(isPalindrome("ab cba"), true);
       assertEquals(isPalindrome("abc"), false);
+    }
+
+    // ----
+
+    public static int revInt(int number) {
+      return Integer.parseInt(
+        new StringBuilder(Integer.toString(number))
+        .reverse().toString());
+    }
+    @Test
+    public void shouldReverseInt() {
+      assertEquals(revInt(123), 321);
     }
 }
