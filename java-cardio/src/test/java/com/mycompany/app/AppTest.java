@@ -1,7 +1,11 @@
 package com.mycompany.app;
 
 import static org.junit.Assert.assertEquals;
+
+import java.util.Arrays;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+
 import org.junit.Test;
 
 public class AppTest 
@@ -38,5 +42,17 @@ public class AppTest
     @Test
     public void shouldReverseInt() {
       assertEquals(revInt(123), 321);
+    }
+
+    // ----
+
+    public static String capitalizeLetters(String text) {
+      return Arrays.stream(text.split("\\s+"))
+        .map(word -> word.substring(0, 1).toUpperCase() + word.substring(1))
+        .collect(Collectors.joining(" "));
+    }
+    @Test
+    public void shouldCapitalizeLetters() {
+      assertEquals(capitalizeLetters("ab cd"), "Ab Cd");
     }
 }
