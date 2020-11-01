@@ -2,3 +2,8 @@
 
 <h1 align="center">Cardio</h1>
 <p align="center">A collection of cardio-tasks across different languages.</p>
+
+## List of cardios
+
+- Reverse string
+- Is palindrome
