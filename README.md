@@ -16,7 +16,8 @@ Links to major files:
 
 - Reverse string
 - Is palindrome
-
+- Reverse int
+- Capitalize letters
 
 ## 📜 Licensing
 
