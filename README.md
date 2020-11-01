@@ -5,7 +5,7 @@
 
 ## 🙉 What is this exactly?
 
-Cardio is a collection of cardio-tasks across different languages which shows how to solve them in the most compact way 📦 Furthermore it is test-driven 🧪
+Cardio is a collection of cardio-tasks across different languages which shows how to solve them in the most compact way 📦 Furthermore it is test-driven 🧪 Inspired by [Traversy Media on Youtube](https://www.youtube.com/watch?v=M2bJBuaOeOQ) 📺
 
 Links to major files:
 
