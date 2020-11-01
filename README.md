@@ -16,3 +16,8 @@ Links to major files:
 
 - Reverse string
 - Is palindrome
+
+
+## 📜 Licensing
+
+[MIT License](LICENSE).
