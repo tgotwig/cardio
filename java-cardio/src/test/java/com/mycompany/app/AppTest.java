@@ -26,7 +26,7 @@ public class AppTest
         .allMatch(i -> temp.charAt(i) == temp.charAt(temp.length() - i - 1));
     }
     @Test
-    public void shouldValidatePalindrome() {
+    public void shouldBePalindrome() {
       assertEquals(isPalindrome("abcba"), true);
       assertEquals(isPalindrome("ab cba"), true);
       assertEquals(isPalindrome("abc"), false);
