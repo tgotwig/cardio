@@ -17,14 +17,14 @@ defmodule ElixirCardio do
 
   ## Examples
 
-      iex> ElixirCardio.is_palindrome("disney")
+      iex> ElixirCardio.is_palindrome?("disney")
       false
 
-      iex> ElixirCardio.is_palindrome("did")
+      iex> ElixirCardio.is_palindrome?("did")
       true
 
   """
-  def is_palindrome(word) do
+  def is_palindrome?(word) do
     word
     |> String.to_charlist()
     |> Enum.with_index()
