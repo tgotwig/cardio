@@ -10,7 +10,7 @@ Cardio is a collection of cardio-tasks across different languages which shows ho
 Links to major files:
 
 - [Elixir](elixir-cardio/lib/elixir_cardio.ex)
-- [Java](java-cardio/src/test/java/com/mycompany/app/AppTest.java)
+- [Java](java-cardio/src/test/java/app/AppTest.java)
 
 ## 📄 List of cardios
 
