@@ -8,3 +8,6 @@ test:
 	@echo "☕️ Run Java tests"
 	@echo "────────────────────────────"
 	cd java-cardio && make test
+
+sort:
+	sort -o .gitignore .gitignore
