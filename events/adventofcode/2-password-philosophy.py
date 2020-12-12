@@ -20,3 +20,24 @@ with open("2.data.txt") as fp:
     counter += 1 if letter_is_between_min_max else 0
 
 assert counter == 396
+
+# ────────────────────────────
+
+counter = 0
+with open("2.data.txt") as fp:
+  Lines = fp.readlines()
+  for line in Lines:
+    data = line.split()
+    pos_list = data[0].split('-')
+    pos_a = int(pos_list[0]) - 1
+    pos_b = int(pos_list[1]) - 1
+    letter = data[1][0]
+    password = data[2]
+
+    one_pos_true = (password[pos_a] == letter) ^ (password[pos_b] == letter)
+
+    print(pos_a, pos_b, letter, password, '|', one_pos_true)
+
+    counter += 1 if one_pos_true else 0
+
+assert counter == 428
