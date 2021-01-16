@@ -1,8 +1,9 @@
+#!/usr/bin/env python
 # https://adventofcode.com/2020/day/2
 from collections import Counter 
 
 counter = 0
-with open("2.data.txt") as fp:
+with open("2.puzzle.txt") as fp:
   Lines = fp.readlines()
   for line in Lines:
     data = line.split()
@@ -24,7 +25,7 @@ assert counter == 396
 # ────────────────────────────
 
 counter = 0
-with open("2.data.txt") as fp:
+with open("2.puzzle.txt") as fp:
   Lines = fp.readlines()
   for line in Lines:
     data = line.split()
