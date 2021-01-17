@@ -16,8 +16,6 @@ with open("2.puzzle.txt") as fp:
     letters_cnt = Counter(password)[letter]
     letter_is_between_min_max = min <= letters_cnt <= max
 
-    print(min, max, letter, password, '|', letter_is_between_min_max)
-
     counter += 1 if letter_is_between_min_max else 0
 
 assert counter == 396
@@ -36,8 +34,6 @@ with open("2.puzzle.txt") as fp:
     password = data[2]
 
     one_pos_true = (password[pos_a] == letter) ^ (password[pos_b] == letter)
-
-    print(pos_a, pos_b, letter, password, '|', one_pos_true)
 
     counter += 1 if one_pos_true else 0
 
