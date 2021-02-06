@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.Map.Entry;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -14,12 +15,12 @@ import org.junit.Test;
 
 public class AppTest 
 {
-  public static String revStr(String string) {
-    return new StringBuilder(string).reverse().toString();
-  }
   @Test
   public void shouldReverseString() {
-    assertEquals(revStr("disney"), "yensid");
+    Function<String, String> revStr = 
+      str -> new StringBuilder(str).reverse().toString();
+
+    assertEquals(revStr.apply("disney"), "yensid");
   }
 
   // ----
