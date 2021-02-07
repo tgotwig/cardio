@@ -23,18 +23,17 @@ public class AppTest
     assertEquals(revStr.apply("disney"), "yensid");
   }
 
-  // ----
-
-  public static Boolean isPalindrome(String text) {
-    String temp  = text.replaceAll("\\s+", "").toLowerCase();
-    return IntStream.range(0, temp.length()/2)
-      .allMatch(i -> temp.charAt(i) == temp.charAt(temp.length() - i - 1));
-  }
   @Test
   public void shouldBePalindrome() {
-    assertEquals(isPalindrome("abcba"), true);
-    assertEquals(isPalindrome("ab cba"), true);
-    assertEquals(isPalindrome("abc"), false);
+    Function<String, Boolean> isPalindrome = str -> {
+      String temp  = str.replaceAll("\\s+", "").toLowerCase();
+      return IntStream.range(0, temp.length()/2)
+        .allMatch(i -> temp.charAt(i) == temp.charAt(temp.length() - i - 1));
+    };
+
+    assertEquals(isPalindrome.apply("abcba"), true);
+    assertEquals(isPalindrome.apply("ab cba"), true);
+    assertEquals(isPalindrome.apply("abc"), false);
   }
 
   // ----
