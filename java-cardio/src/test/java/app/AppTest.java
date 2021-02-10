@@ -36,16 +36,14 @@ public class AppTest
     assertEquals(isPalindrome.apply("abc"), false);
   }
 
-  // ----
-
-  public static int revInt(int number) {
-    return Integer.parseInt(
-      new StringBuilder(Integer.toString(number))
-      .reverse().toString());
-  }
   @Test
   public void shouldReverseInt() {
-    assertEquals(revInt(123), 321);
+    Function<Integer, Integer> revInt = number -> Integer.parseInt(
+      new StringBuilder(Integer.toString(number))
+      .reverse().toString()
+    );
+
+    assertEquals(revInt.apply(Integer.valueOf(123)), Integer.valueOf(321));
   }
 
   // ----
