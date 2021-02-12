@@ -46,16 +46,14 @@ public class AppTest
     assertEquals(revInt.apply(Integer.valueOf(123)), Integer.valueOf(321));
   }
 
-  // ----
-
-  public static String capitalizeLetters(String text) {
-    return Arrays.stream(text.split("\\s+"))
-      .map(word -> word.substring(0, 1).toUpperCase() + word.substring(1))
-      .collect(Collectors.joining(" "));
-  }
   @Test
   public void shouldCapitalizeLetters() {
-    assertEquals(capitalizeLetters("ab cd"), "Ab Cd");
+    Function<String, String> capitalizeLetters = 
+      str -> Arrays.stream(str.split("\\s+"))
+        .map(word -> word.substring(0, 1).toUpperCase() + word.substring(1))
+        .collect(Collectors.joining(" "));
+
+    assertEquals(capitalizeLetters.apply("ab cd"), "Ab Cd");
   }
 
   // ----
