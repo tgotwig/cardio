@@ -56,29 +56,28 @@ public class AppTest
     assertEquals(capitalizeLetters.apply("ab cd"), "Ab Cd");
   }
 
-  // ----
-
-  public static int maxCharacter(String string) {
-    Map<Character, Integer> map = new HashMap<Character, Integer>();
-    for (char c : string.toCharArray()) {
-      if (!map.containsKey(c)) {
-        map.put(c, 1);
-      } else {
-        map.put(c, map.get(c) + 1);
-      }
-    }
-
-    int max = Integer.MIN_VALUE;
-    Set<Map.Entry<Character,Integer>> entries = map.entrySet();
-    for (Entry<Character,Integer> entry : entries) {
-      if (entry.getValue()>max) {
-        max=entry.getValue();
-      }
-    }
-    return max;
-  }
   @Test
   public void shouldGetMaxCharacter() {
-    assertEquals(maxCharacter("java"), 2);
+    Function<String, Integer> maxCharacter = str -> {
+      Map<Character, Integer> map = new HashMap<Character, Integer>();
+      for (char c : str.toCharArray()) {
+        if (!map.containsKey(c)) {
+          map.put(c, 1);
+        } else {
+          map.put(c, map.get(c) + 1);
+        }
+      }
+
+      int max = Integer.MIN_VALUE;
+      Set<Map.Entry<Character,Integer>> entries = map.entrySet();
+      for (Entry<Character,Integer> entry : entries) {
+        if (entry.getValue()>max) {
+          max=entry.getValue();
+        }
+      }
+      return max;
+    };
+
+    assertEquals(maxCharacter.apply("java"), Integer.valueOf(2));
   }
 }
