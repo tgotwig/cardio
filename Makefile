@@ -1,6 +1,7 @@
 test:
 	make test-elixir
 	make test-java
+	make test-javascript
 	make test-python
 
 test-elixir:
@@ -14,6 +15,12 @@ test-java:
 	@echo "☕️ Run Java tests"
 	@echo "────────────────────────────"
 	cd java-cardio && make test
+
+test-javascript:
+	@echo "────────────────────────────"
+	@echo "🟢 Run Javascript tests"
+	@echo "────────────────────────────"
+	cd javascript-cardio && npm test
 
 test-python:
 	@echo "────────────────────────────"

@@ -3,4 +3,5 @@
 .project
 .settings
 .vscode
+node_modules
 target
