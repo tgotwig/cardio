@@ -11,7 +11,7 @@ Cardio is a collection of cardio-tasks across different languages which shows ho
 
 |                    | [Java](java-cardio/src/test/java/app/AppTest.java) | [Elixir](elixir-cardio/lib/elixir_cardio.ex) | [Javascript](javascript-cardio/test.js) |
 |--------------------|------|--------|--------|
-| Reverse string     | ✅    | ✅      |        |
+| Reverse string     | ✅    | ✅      | ✅      |
 | Is palindrome      | ✅    | ✅      |        |
 | Reverse int        | ✅    |        |        |
 | Capitalize letters | ✅    |        |        |
