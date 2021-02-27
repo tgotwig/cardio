@@ -6,3 +6,11 @@ it('should reverse string', function () {
 
   assert.equal(revStr('disney'), 'yensid')
 })
+
+it('should be palindrome', function () {
+  const isPalindrome = (str) => String(str).split('').reverse().join('') === str
+
+  assert.equal(isPalindrome('hello'), false)
+  assert.equal(isPalindrome('bob'), true)
+  assert.equal(isPalindrome('racecar'), true)
+})
