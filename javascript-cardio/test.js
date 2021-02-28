@@ -14,3 +14,13 @@ it('should be palindrome', function () {
   assert.equal(isPalindrome('bob'), true)
   assert.equal(isPalindrome('racecar'), true)
 })
+
+it('should reverse int', function () {
+  const revInt = (int) => {
+    const revStr = Number(int).toString().split('').reverse().join('')
+    return parseInt(revStr) * Math.sign(int)
+  }
+
+  assert.equal(revInt(12345), 54321)
+  assert.equal(revInt(-12345), -54321)
+})
