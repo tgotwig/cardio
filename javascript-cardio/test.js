@@ -24,3 +24,15 @@ it('should reverse int', function () {
   assert.equal(revInt(12345), 54321)
   assert.equal(revInt(-12345), -54321)
 })
+
+it('should capitalize letters', function () {
+  const capitalizeLetters = (str) => {
+    return String(str)
+      .toLowerCase()
+      .split(' ')
+      .map((str) => str.substring(0, 1).toUpperCase() + str.substring(1))
+      .join(' ')
+  }
+
+  assert.equal(capitalizeLetters('i love javascript'), 'I Love Javascript')
+})
