@@ -36,3 +36,31 @@ it('should capitalize letters', function () {
 
   assert.equal(capitalizeLetters('i love javascript'), 'I Love Javascript')
 })
+
+it('should return most frequent character', function () {
+  const maxChar = (str) => {
+    const charMap = {}
+    let maxNum = 0
+    let maxChar = ''
+
+    String(str)
+      .split('')
+      .forEach((char) => {
+        if (charMap[char]) {
+          charMap[char]++
+        } else {
+          charMap[char] = 1
+        }
+
+        for (let char in charMap) {
+          if (charMap[char] > maxNum) {
+            maxNum = charMap[char]
+            maxChar = char
+          }
+        }
+      })
+    return maxChar
+  }
+
+  assert.equal(maxChar('javascript'), 'a')
+})
