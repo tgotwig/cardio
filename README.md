@@ -16,6 +16,7 @@ Cardio is a collection of cardio-tasks across different languages which shows ho
 | Reverse int        | ✅    |        |✅|
 | Capitalize letters | ✅    |        |✅|
 | MaxCharacter       | ✅    |        |✅|
+| FizzBuzz           |       |        |✅|
 
 ## 📜 Licensing
 

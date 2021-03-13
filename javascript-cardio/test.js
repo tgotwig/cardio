@@ -64,3 +64,26 @@ it('should return most frequent character', function () {
 
   assert.equal(maxChar('javascript'), 'a')
 })
+
+it('should solve fizzBuzz', function () {
+  const fizzBuzz = (int) => {
+    let output = ''
+    for (var i = 1; i <= Number(int); i++) {
+      output = ''
+      if (i % 3 === 0) {
+        output += 'fizz'
+      }
+      if (i % 5 === 0) {
+        output += 'buzz'
+      }
+      if (output === '') {
+        output += i
+      }
+    }
+    return output
+  }
+
+  assert.equal(fizzBuzz(2), '2')
+  assert.equal(fizzBuzz(3), 'fizz')
+  assert.equal(fizzBuzz(15), 'fizzbuzz')
+})
