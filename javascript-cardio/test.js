@@ -87,3 +87,20 @@ it('should solve fizzBuzz', function () {
   assert.equal(fizzBuzz(3), 'fizz')
   assert.equal(fizzBuzz(15), 'fizzbuzz')
 })
+
+it('should find longest words', function () {
+  const longestWords = (str) => {
+    const words = Array.from(
+      String(str)
+        .toLowerCase()
+        .match(/[a-z0-9]+/g)
+    )
+    const sorted = words.sort((a, b) => String(b).length - String(a).length)
+    return sorted.filter((word) => word.length === sorted[0].length)
+  }
+
+  assert.deepStrictEqual(longestWords('Hello there, my name is Tom'), [
+    'hello',
+    'there',
+  ])
+})
