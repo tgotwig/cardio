@@ -104,3 +104,22 @@ it('should find longest words', function () {
     'there',
   ])
 })
+
+it('should chunk array', function () {
+  const chunkArray = (arr, len) => {
+    const chunkedArr = []
+    Array.from(arr).forEach((val) => {
+      const last = chunkedArr[chunkedArr.length - 1]
+      !last || last.length === Number(len)
+        ? chunkedArr.push([val])
+        : last.push(val)
+    })
+    return chunkedArr
+  }
+
+  assert.deepStrictEqual(chunkArray([1, 2, 3, 4, 5, 6, 7], 3), [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7],
+  ])
+})
