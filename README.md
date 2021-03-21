@@ -19,6 +19,7 @@ Cardio is a collection of cardio-tasks across different languages which shows ho
 | FizzBuzz           | | |✅|
 | LongestWords       | | |✅|
 | chunkArray         | | |✅|
+| flattenArray       | | |✅|
 
 ## 📜 Licensing
 

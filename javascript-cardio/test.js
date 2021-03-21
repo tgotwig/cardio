@@ -123,3 +123,12 @@ it('should chunk array', function () {
     [7],
   ])
 })
+
+it('should flatten array', function () {
+  const flattenArray = (arrays) => Array.from(arrays).flat(Infinity)
+
+  assert.deepStrictEqual(
+    flattenArray([[1, 2], [3, 4], [5, 6], [7]]),
+    [1, 2, 3, 4, 5, 6, 7]
+  )
+})
