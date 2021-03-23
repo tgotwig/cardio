@@ -132,3 +132,14 @@ it('should flatten array', function () {
     [1, 2, 3, 4, 5, 6, 7]
   )
 })
+
+it('should be Anagram', function () {
+  const isAnagram = (str1, str2) => {
+    const formatStr = (str) =>
+      str.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('')
+    return formatStr(str1) === formatStr(str2)
+  }
+
+  assert.equal(isAnagram('elbow', 'below'), true)
+  assert.equal(isAnagram('Tom', 'Ben'), false)
+})
