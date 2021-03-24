@@ -9,13 +9,13 @@ Cardio is a collection of cardio-tasks across different languages which shows ho
 
 ## 📄 Overview with links to major files
 
-||[Java](java-cardio/src/test/java/app/AppTest.java) | [Elixir](elixir-cardio/lib/elixir_cardio.ex) | [Javascript](javascript-cardio/test.js)|
+||[Elixir](elixir-cardio/lib/elixir_cardio.ex) | [Java](java-cardio/src/test/java/app/AppTest.java) | [Javascript](javascript-cardio/test.js)|
 |--------------------|------|--------|--------|
 | Reverse string     |✅|✅|✅|
 | Is palindrome      |✅|✅|✅|
-| Reverse int        |✅| |✅|
-| Capitalize letters |✅| |✅|
-| MaxCharacter       |✅| |✅|
+| Reverse int        | |✅|✅|
+| Capitalize letters | |✅|✅|
+| MaxCharacter       | |✅|✅|
 | FizzBuzz           | | |✅|
 | LongestWords       | | |✅|
 | chunkArray         | | |✅|
