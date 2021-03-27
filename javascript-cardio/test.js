@@ -143,3 +143,9 @@ it('should be Anagram', function () {
   assert.equal(isAnagram('elbow', 'below'), true)
   assert.equal(isAnagram('Tom', 'Ben'), false)
 })
+
+it('should add all numbers together', function () {
+  const addAll = (...numbers) => numbers.reduce((acc, cur) => acc + cur)
+
+  assert.equal(addAll(1, 2, 3), 6)
+})
