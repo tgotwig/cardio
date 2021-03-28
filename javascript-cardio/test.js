@@ -149,3 +149,27 @@ it('should add all numbers together', function () {
 
   assert.equal(addAll(1, 2, 3), 6)
 })
+
+it('should sum all primes', function () {
+  const sumAllPrimes = (num) => {
+    let total = 0
+
+    function checkForPrime(i) {
+      for (let j = 2; j < i; j++) {
+        if (i % j === 0) {
+          return false
+        }
+      }
+      return true
+    }
+
+    for (let i = 2; i <= num; i++) {
+      if (checkForPrime(i)) {
+        total += i
+      }
+    }
+    return total
+  }
+
+  assert.equal(sumAllPrimes(10), 17)
+})
