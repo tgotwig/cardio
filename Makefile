@@ -3,6 +3,7 @@ test:
 	make test-java
 	make test-javascript
 	make test-python
+	make test-rust
 
 test-elixir:
 	@echo "────────────────────────────"
@@ -27,6 +28,12 @@ test-python:
 	@echo "☕️ Run Python tests"
 	@echo "────────────────────────────"
 	cd events/adventofcode && ./test.sh
+
+test-rust:
+	@echo "────────────────────────────"
+	@echo "🦀 Run Rust tests"
+	@echo "────────────────────────────"
+	cd rust-cardio && make test
 
 sort:
 	sort -o .gitignore .gitignore
