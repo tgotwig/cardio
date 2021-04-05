@@ -11,4 +11,13 @@ mod tests {
 
     assert_eq!(rev_str("disney"), "yensid");
   }
+
+  #[test]
+  fn should_be_palindrome() {
+    let is_palindrome = |str: &str| str.chars().rev().collect::<String>() == str;
+
+    assert_eq!(is_palindrome("bob"), true);
+    assert_eq!(is_palindrome("racecar"), true);
+    assert_eq!(is_palindrome("hello"), false);
+  }
 }

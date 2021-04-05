@@ -12,7 +12,7 @@ Cardio is a collection of cardio-tasks across different languages which shows ho
 ||[Elixir](elixir-cardio/lib/elixir_cardio.ex) | [Java](java-cardio/src/test/java/app/AppTest.java) | [Javascript](javascript-cardio/test.js) | [Rust](rust-cardio/src/main.rs)|
 |--------------------|------|--------|--------|--------|
 | Reverse string     |✅|✅|✅|✅|
-| Is palindrome      |✅|✅|✅| |
+| Is palindrome      |✅|✅|✅|✅|
 | Reverse int        | |✅|✅| |
 | Capitalize letters | |✅|✅| |
 | MaxCharacter       | |✅|✅| |
