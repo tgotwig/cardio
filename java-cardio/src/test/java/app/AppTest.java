@@ -15,7 +15,7 @@ import org.junit.Test;
 
 public class AppTest 
 {
-  @Test
+  @Test // Reverse string
   public void shouldReverseString() {
     Function<String, String> revStr = 
       str -> new StringBuilder(str).reverse().toString();

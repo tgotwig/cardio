@@ -4,7 +4,7 @@ fn main() {
 
 mod tests {
 
-  #[test]
+  #[test] // Reverse string
   fn should_reserve_string() {
     let rev_str = |str: &str| str.chars().rev().collect::<String>();
 
