@@ -23,7 +23,7 @@ public class AppTest
     assertEquals(revStr.apply("disney"), "yensid");
   }
 
-  @Test
+  @Test // Topic: Is palindrome
   public void shouldBePalindrome() {
     Function<String, Boolean> isPalindrome = str -> {
       String temp  = str.replaceAll("\\s+", "").toLowerCase();

@@ -11,7 +11,7 @@ mod tests {
     assert_eq!(rev_str("disney"), "yensid");
   }
 
-  #[test]
+  #[test] // Topic: Is palindrome
   fn should_be_palindrome() {
     let is_palindrome = |str: &str| str.chars().rev().collect::<String>() == str;
 

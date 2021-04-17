@@ -7,6 +7,7 @@ it('should reverse string', function () {
   assert.equal(revStr('disney'), 'yensid')
 })
 
+// Topic: Is palindrome
 it('should be palindrome', function () {
   const isPalindrome = (str) => String(str).split('').reverse().join('') === str
 

@@ -13,7 +13,7 @@ defmodule ElixirCardio do
   end
 
   @doc """
-  Checks for palindrome.
+  Topic: Is palindrome
 
   ## Examples
 
