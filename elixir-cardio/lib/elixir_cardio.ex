@@ -1,6 +1,6 @@
 defmodule ElixirCardio do
   @doc """
-  Reverse string
+  Topic: Reverse string
 
   ## Examples
 
