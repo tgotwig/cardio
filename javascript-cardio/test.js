@@ -17,6 +17,7 @@ it('should be palindrome', function () {
   assert.equal(isPalindrome('racecar'), true)
 })
 
+// Topic: Reverse int
 it('should reverse int', function () {
   const revInt = (int) => {
     const revStr = Number(int).toString().split('').reverse().join('')

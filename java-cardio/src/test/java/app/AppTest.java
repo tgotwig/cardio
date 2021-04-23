@@ -36,7 +36,7 @@ public class AppTest
     assertEquals(isPalindrome.apply("abc"), false);
   }
 
-  @Test
+  @Test // Topic: Reverse int
   public void shouldReverseInt() {
     Function<Integer, Integer> revInt = number -> Integer.parseInt(
       new StringBuilder(Integer.toString(number))
