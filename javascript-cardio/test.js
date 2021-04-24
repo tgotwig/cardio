@@ -28,6 +28,7 @@ it('should reverse int', function () {
   assert.equal(revInt(-12345), -54321)
 })
 
+// Topic: Capitalize letters
 it('should capitalize letters', function () {
   const capitalizeLetters = (str) => {
     return String(str)

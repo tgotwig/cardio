@@ -46,7 +46,7 @@ public class AppTest
     assertEquals(revInt.apply(Integer.valueOf(123)), Integer.valueOf(321));
   }
 
-  @Test
+  @Test // Topic: Capitalize letters
   public void shouldCapitalizeLetters() {
     Function<String, String> capitalizeLetters = 
       str -> Arrays.stream(str.split("\\s+"))
