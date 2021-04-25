@@ -41,6 +41,7 @@ it('should capitalize letters', function () {
   assert.equal(capitalizeLetters('i love javascript'), 'I Love Javascript')
 })
 
+// Topic: Max character
 it('should return most frequent character', function () {
   const maxChar = (str) => {
     const charMap = {}

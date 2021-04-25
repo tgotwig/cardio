@@ -56,7 +56,7 @@ public class AppTest
     assertEquals(capitalizeLetters.apply("ab cd"), "Ab Cd");
   }
 
-  @Test
+  @Test // Topic: Max character
   public void shouldGetMaxCharacter() {
     Function<String, Integer> maxCharacter = str -> {
       Map<Character, Integer> map = new HashMap<Character, Integer>();
