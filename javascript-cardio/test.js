@@ -70,6 +70,7 @@ it('should return most frequent character', function () {
   assert.equal(maxChar('javascript'), 'a')
 })
 
+// Topic: Fizz buzz
 it('should solve fizzBuzz', function () {
   const fizzBuzz = (int) => {
     let output = ''
