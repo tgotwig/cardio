@@ -3,6 +3,10 @@ package app;
 import static org.junit.Assert.assertEquals;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.Map.Entry;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -54,5 +58,31 @@ public class AppTest
   @Test
   public void shouldCapitalizeLetters() {
     assertEquals(capitalizeLetters("ab cd"), "Ab Cd");
+  }
+
+  // ----
+
+  public static int maxCharacter(String string) {
+    Map<Character, Integer> map = new HashMap<Character, Integer>();
+    for (char c : string.toCharArray()) {
+      if (!map.containsKey(c)) {
+        map.put(c, 1);
+      } else {
+        map.put(c, map.get(c) + 1);
+      }
+    }
+
+    int max = Integer.MIN_VALUE;
+    Set<Map.Entry<Character,Integer>> entries = map.entrySet();
+    for (Entry<Character,Integer> entry : entries) {
+      if (entry.getValue()>max) {
+        max=entry.getValue();
+      }
+    }
+    return max;
+  }
+  @Test
+  public void shouldGetMaxCharacter() {
+    assertEquals(maxCharacter("java"), 2);
   }
 }
