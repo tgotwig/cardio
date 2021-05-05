@@ -17,7 +17,7 @@ Cardio is a collection of cardio-tasks across different languages which shows ho
 | Capitalize letters | |✅|✅| |
 | Max character      | |✅|✅| |
 | Fizz buzz          | | |✅| |
-| LongestWords       | | |✅| |
+| Longest words      | | |✅| |
 | chunkArray         | | |✅| |
 | flattenArray       | | |✅| |
 | isAnagram          | | |✅| |
