@@ -112,6 +112,7 @@ it('should find longest words', function () {
   ])
 })
 
+// Topic: Chunk array
 it('should chunk array', function () {
   const chunkArray = (arr, len) => {
     const chunkedArr = []
