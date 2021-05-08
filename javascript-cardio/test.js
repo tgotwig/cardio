@@ -132,6 +132,7 @@ it('should chunk array', function () {
   ])
 })
 
+// Topic: Flatten array
 it('should flatten array', function () {
   const flattenArray = (arrays) => Array.from(arrays).flat(Infinity)
 

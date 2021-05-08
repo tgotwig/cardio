@@ -19,7 +19,7 @@ Cardio is a collection of cardio-tasks across different languages which shows ho
 | Fizz buzz          | | |✅| |
 | Longest words      | | |✅| |
 | Chunk array        | | |✅| |
-| flattenArray       | | |✅| |
+| Flatten array      | | |✅| |
 | isAnagram          | | |✅| |
 | addAll             | | |✅| |
 | sumAllPrimes       | | |✅| |
