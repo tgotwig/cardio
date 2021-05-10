@@ -142,6 +142,7 @@ it('should flatten array', function () {
   )
 })
 
+// Topic: Is anagram
 it('should be Anagram', function () {
   const isAnagram = (str1, str2) => {
     const formatStr = (str) =>

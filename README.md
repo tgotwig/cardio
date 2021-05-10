@@ -20,7 +20,7 @@ Cardio is a collection of cardio-tasks across different languages which shows ho
 | Longest words      | | |✅| |
 | Chunk array        | | |✅| |
 | Flatten array      | | |✅| |
-| isAnagram          | | |✅| |
+| Is anagram         | | |✅| |
 | addAll             | | |✅| |
 | sumAllPrimes       | | |✅| |
 
