@@ -21,7 +21,7 @@ Cardio is a collection of cardio-tasks across different languages which shows ho
 | Chunk array        | | |✅| |
 | Flatten array      | | |✅| |
 | Is anagram         | | |✅| |
-| addAll             | | |✅| |
+| Sum all            | | |✅| |
 | sumAllPrimes       | | |✅| |
 
 ## 📜 Licensing
