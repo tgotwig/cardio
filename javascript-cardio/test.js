@@ -161,6 +161,7 @@ it('should sum all', function () {
   assert.equal(addAll(1, 2, 3), 6)
 })
 
+// Topic: Sum all primes
 it('should sum all primes', function () {
   const sumAllPrimes = (num) => {
     let total = 0

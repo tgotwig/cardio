@@ -22,7 +22,7 @@ Cardio is a collection of cardio-tasks across different languages which shows ho
 | Flatten array      | | |✅| |
 | Is anagram         | | |✅| |
 | Sum all            | | |✅| |
-| sumAllPrimes       | | |✅| |
+| Sum all primes     | | |✅| |
 
 ## 📜 Licensing
 
