@@ -185,3 +185,15 @@ it('should sum all primes', function () {
 
   assert.equal(sumAllPrimes(10), 17)
 })
+
+// Topic: Seek and destroy
+it('should seek and destoy', function () {
+  const seekAndDestroy = (arr, ...rest) =>
+    arr.filter((val) => !rest.includes(val))
+
+  assert.deepStrictEqual(seekAndDestroy([2, 3, 4, 6, 6, 'hello'], 2, 6), [
+    3,
+    4,
+    'hello',
+  ])
+})

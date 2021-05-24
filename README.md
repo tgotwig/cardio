@@ -23,6 +23,7 @@ Cardio is a collection of cardio-tasks across different languages which shows ho
 | Is anagram         | | |✅| |
 | Sum all            | | |✅| |
 | Sum all primes     | | |✅| |
+| Seek and destroy   | | |✅| |
 
 ## 📜 Licensing
 
