@@ -197,3 +197,24 @@ it('should seek and destoy', function () {
     'hello',
   ])
 })
+
+// Topic: Sort by height
+it('should sort by height', function () {
+  const sortByHeight = (arr) => {
+    const arr1 = []
+    const arr2 = []
+
+    arr.forEach((val, i) => (val === -1 ? arr1.push(i) : arr2.push(val)))
+
+    const sortArr = arr2.sort((a, b) => a - b)
+
+    arr1.forEach((val, i) => sortArr.splice(arr1[i], 0, -1))
+
+    return sortArr
+  }
+
+  assert.deepStrictEqual(
+    sortByHeight([-1, 150, 190, 170, -1, -1, 160, 180]),
+    [-1, 150, 160, 170, -1, -1, 180, 190]
+  )
+})
