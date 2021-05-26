@@ -25,6 +25,7 @@ Cardio is a collection of cardio-tasks across different languages which shows ho
 | Sum all primes     | | |✅| |
 | Seek and destroy   | | |✅| |
 | Sort by height     | | |✅| |
+| Missing letters    | | |✅| |
 
 ## 📜 Licensing
 

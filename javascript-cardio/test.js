@@ -218,3 +218,25 @@ it('should sort by height', function () {
     [-1, 150, 160, 170, -1, -1, 180, 190]
   )
 })
+
+// Topic: Missing letters
+it('Should find the missing letter', function () {
+  const missingLetters = (str) => {
+    let compare = str.charCodeAt(0)
+    let missing
+
+    str.split('').map((char, i) => {
+      if (str.charCodeAt(i) == compare) {
+        ++compare
+      } else {
+        missing = String.fromCharCode(compare)
+      }
+    })
+
+    return missing
+  }
+
+  assert.equal(missingLetters('abce'), 'd')
+  assert.equal(missingLetters('abcdefghjklmno'), 'i')
+  assert.equal(missingLetters('abcdefghijklmnopqrstuvwxyz'), undefined)
+})
