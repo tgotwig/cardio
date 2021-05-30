@@ -13,7 +13,7 @@ Cardio is a collection of cardio-tasks across different languages which shows ho
 |--------------------|------|--------|--------|--------|
 | Reverse string     |✅|✅|✅|✅|
 | Is palindrome      |✅|✅|✅|✅|
-| Reverse int        | |✅|✅| |
+| Reverse int        | |✅|✅|✅|
 | Capitalize letters | |✅|✅| |
 | Max character      | |✅|✅| |
 | Fizz buzz          | | |✅| |
