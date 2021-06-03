@@ -33,4 +33,16 @@ mod tests {
 
         assert_eq!(rev_int(123), 321);
     }
+
+    #[test] // Topic: Capitalize letters
+    fn should_capitalize_letters() {
+        let str_cap = |s: &str| format!("{}{}", &s[..1].to_string().to_uppercase(), &s[1..]);
+        let capitalize_letters = |str: &str| {
+            str.split_inclusive(" ")
+                .map(|f| str_cap(f))
+                .collect::<String>()
+        };
+
+        assert_eq!(capitalize_letters("i love rust"), "I Love Rust");
+    }
 }
