@@ -15,7 +15,7 @@ Cardio is a collection of cardio-tasks across different languages which shows ho
 | Is palindrome      |✅|✅|✅|✅|
 | Reverse int        | |✅|✅|✅|
 | Capitalize letters | |✅|✅|✅|
-| Max character      | |✅|✅| |
+| Max character      | |✅|✅|✅|
 | Fizz buzz          | | |✅| |
 | Longest words      | | |✅| |
 | Chunk array        | | |✅| |

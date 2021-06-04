@@ -3,6 +3,7 @@ fn main() {
 }
 
 mod tests {
+    use std::collections::HashMap;
 
     #[test] // Topic: Reverse string
     fn should_reserve_string() {
@@ -44,5 +45,35 @@ mod tests {
         };
 
         assert_eq!(capitalize_letters("i love rust"), "I Love Rust");
+    }
+
+    #[test] // Topic: Max character
+    fn should_get_max_character() {
+        let max_char = |str: &str| {
+            let mut map: HashMap<char, i32> = HashMap::new();
+
+            for char in str.chars() {
+                if !map.contains_key(&char) {
+                    map.insert(char, 0);
+                } else {
+                    map.insert(char, map.get(&char).unwrap() + 1);
+                }
+            }
+
+            let mut max = 0;
+            let mut char: char = str.chars().nth(0).unwrap();
+
+            for (key, value) in map.into_iter() {
+                max = if value > max {
+                    char = key;
+                    value
+                } else {
+                    max
+                }
+            }
+            return char;
+        };
+
+        assert_eq!(max_char("javascript"), 'a');
     }
 }
