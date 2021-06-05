@@ -76,4 +76,23 @@ mod tests {
 
         assert_eq!(max_char("javascript"), 'a');
     }
+
+    #[test] // Topic: Fizz buzz
+    fn should_do_fizz_buzz() {
+        let fizz_buzz = |int: i32| {
+            let mut output = String::new();
+
+            if int % 3 == 0 {
+                output.push_str("fizz");
+            }
+            if int % 5 == 0 {
+                output.push_str("buzz");
+            }
+
+            output
+        };
+
+        assert_eq!(fizz_buzz(3), "fizz");
+        assert_eq!(fizz_buzz(15), "fizzbuzz");
+    }
 }
