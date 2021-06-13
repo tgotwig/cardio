@@ -2,7 +2,7 @@
 # https://adventofcode.com/2020/day/1
 
 my_list = []
-with open("1.puzzle.txt") as fp:
+with open("../data/1.puzzle.txt") as fp:
   Lines = fp.readlines()
   for line in Lines:
     my_list.append(int(line))

@@ -27,7 +27,7 @@ test-python:
 	@echo "────────────────────────────"
 	@echo "☕️ Run Python tests"
 	@echo "────────────────────────────"
-	cd specials/adventofcode && ./test.sh
+	cd specials/adventofcode/python && ./test.sh
 
 test-rust:
 	@echo "────────────────────────────"
