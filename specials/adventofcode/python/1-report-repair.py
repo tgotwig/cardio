@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # https://adventofcode.com/2020/day/1
+# Topic: Report repair
 
 my_list = []
 with open("../data/1.puzzle.txt") as fp:

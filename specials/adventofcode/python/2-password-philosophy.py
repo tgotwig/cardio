@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # https://adventofcode.com/2020/day/2
+# Topic: Password philosophy
+
 from collections import Counter 
 
 counter = 0

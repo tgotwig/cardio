@@ -27,6 +27,17 @@ Cardio is a collection of cardio-tasks across different languages which shows ho
 | Sort by height     | | |✅| |
 | Missing letters    | | |✅| |
 
+### 🎃 Specials
+
+<details><summary>🎄 Advent of Code 2020</summary>
+
+||[Python](specials/adventofcode/python)|
+|--------------------------|--|
+| Report repair            |✅|
+| Password philosophy      |✅|
+
+</details>
+
 ## 📜 Licensing
 
 [MIT License](LICENSE).
