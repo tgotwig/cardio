@@ -95,4 +95,20 @@ mod tests {
         assert_eq!(fizz_buzz(3), "fizz");
         assert_eq!(fizz_buzz(15), "fizzbuzz");
     }
+
+    #[test] // Topic: Longest words
+    fn should_find_longest_words() {
+        // todo: create closure
+        let msg = "Hello there, my name is Tom"
+            .to_lowercase()
+            .replace(&['(', ')', ',', '\"', '.', ';', ':', '\''][..], "");
+        let split = msg.split_whitespace();
+        let mut vec: Vec<&str> = split.collect();
+        vec.sort_by_key(|a| a.len());
+        vec.reverse();
+        let len = vec.get(0).unwrap().len();
+        vec.retain(|&word| word.len() == len);
+
+        assert_eq!(vec, ["there", "hello"]);
+    }
 }
